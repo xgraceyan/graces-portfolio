@@ -1,0 +1,89 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.mx-6 {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+}
+
+.spacer {
+  margin: 5rem 0 0 0;
+}
+
+.line-img {
+  height: 20px;
+  opacity: 85%;
+  -webkit-user-drag: none;
+}
+
+/* buttons */
+.btn-dark {
+  border: 2px solid transparent !important;
+}
+
+.btn-dark:hover {
+  border: 2px solid #212529 !important;
+  background-color: transparent;
+  color: #212529;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-light {
+  border: 2px solid #212529 !important;
+  background-color: transparent;
+}
+
+.btn-light:hover {
+  background-color: #212529;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+/* navbar */
+.nav-item {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+/* main page */
+.main-title-text {
+  font-size: 5rem !important;
+}
+
+/* projects card */
+#projects-screen .card-text {
+  font-size: 0.8rem !important;
+}
+
+.card {
+  border-radius: 10px;
+  border-color: #21252947;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px#2125293f;
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+}
+
+.card-img-top {
+  border-radius: 10px;
+  transform: scale(0.9);
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-title-text {
+    font-size: 3rem !important;
+  }
+  div#title-screen-buttons {
+    transform: scale(0.75);
+  }
+  .spacer {
+    margin: 3rem 0 0 0;
+  }
+  .line-img {
+    height: 15px;
+  }
+}
