@@ -8,6 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
 
     <!-- Bootstrap CSS v5.2.0-beta1 -->
     <link
@@ -16,6 +17,9 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+
+    <!-- import animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- main stylesheet -->
     <link rel="stylesheet" href="index.css" />
@@ -33,6 +37,8 @@
       <!-- navbar start -->
       <nav
         class="navbar navbar-light navbar-expand-md bg-faded justify-content-center mt-3"
+        data-aos="fade-down"
+        data-aos-delay="100"
       >
         <div class="container">
           <a href="/" class="navbar-brand d-flex w-50 me-auto fw-bold"
@@ -59,7 +65,7 @@
                   >contact</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -76,6 +82,22 @@
                       href="https://musication.graceyan.net"
                       target="_blank"
                       >musication</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/xgraceyan/ciphorama-ui"
+                      target="_blank"
+                      >ciphorama-ui</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://whizfin.org/"
+                      target="_blank"
+                      >whizfin</a
                     >
                   </li>
                   <li>
@@ -103,7 +125,7 @@
                     >
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
             <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
               <li class="nav-item">
@@ -112,6 +134,14 @@
                   href="https://github.com/xgraceyan"
                   target="_blank"
                   >github</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.behance.net/grace_yan_0809"
+                  target="_blank"
+                  >behance</a
                 >
               </li>
               <li class="nav-item">
@@ -126,17 +156,31 @@
       <!-- title screen start -->
       <section id="title-screen">
         <div class="container mx-6">
-          <h1 class="main-title-text text-center fw-bold">hi, i'm grace yan</h1>
-          <h5 class="text-center text-muted fs-3">developer & designer</h5>
+          <div data-aos="fade-down" data-aos-delay="400">
+            <h1 class="main-title-text text-center fw-bold">
+              hi, i'm grace yan
+            </h1>
+            <h5 class="text-center text-muted fs-3">developer & designer</h5>
+          </div>
           <div class="spacer"></div>
-          <div id="title-screen-buttons" class="text-center align-items-center">
+          <div
+            id="title-screen-buttons"
+            class="text-center align-items-center"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <span>
+              <a
+                class="btn btn-light mx-4 my-2 px-5 py-2"
+                href="https://drive.google.com/file/d/1qvqpAftdnUKQiKaiGmqdsX9MZzOoNiXh/view?usp=sharing"
+                target="_blank"
+                >Resume</a
+              >
               <a
                 class="btn btn-dark mx-4 my-2 px-5 py-2"
                 href="mailto:xgraceyan@gmail.com"
                 >Contact</a
               >
-              <a class="btn btn-light mx-4 my-2 px-5 py-2">Portfolio</a>
             </span>
           </div>
         </div>
@@ -146,12 +190,17 @@
       <!-- projects start -->
       <section id="projects-screen">
         <div class="container mb-5">
-          <div id="projects-title" class="my-4">
+          <div
+            id="projects-title"
+            class="my-4"
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
             <h1 class="text-center fw-bold">my projects</h1>
             <img src="./images/line.png" class="mx-auto d-block line-img" />
           </div>
 
-          <div class="row text-center">
+          <div class="row text-center" data-aos="fade-up">
             <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
               <div class="card mx-auto my-4" style="width: 22rem">
                 <img
@@ -179,6 +228,68 @@
                   <a
                     class="btn btn-dark mx-2 my-2 px-5 py-1"
                     href="https://github.com/xgraceyan/musication"
+                    target="_blank"
+                    >github</a
+                  >
+                </span>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+              <div class="card mx-auto my-4" style="width: 22rem">
+                <img
+                  src="./images/ciphorama-ui.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body my-1 d-flex flex-column">
+                  <h4 class="card-title fw-bold">Ciphorama UI</h4>
+                  <h6 class="card-subtitle mb-2">reactjs, antui, html, css</h6>
+                  <p class="card-text text-muted">
+                    A cryptocurrency fraud detection prototype UI I made during
+                    my internship at Ciphorama.
+                  </p>
+                </div>
+                <span class="mt-1 mb-3">
+                  <a
+                    class="btn btn-dark mx-2 my-2 px-5 py-1"
+                    href="https://github.com/xgraceyan/ciphorama-ui"
+                    target="_blank"
+                    >github</a
+                  >
+                </span>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 d-flex align-items-stretch">
+              <div class="card mx-auto my-4" style="width: 22rem">
+                <img
+                  src="./images/whizfin.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body my-1 d-flex flex-column">
+                  <h4 class="card-title fw-bold">WhizFin</h4>
+                  <h6 class="card-subtitle mb-2">
+                    reactjs, firebase, html, css
+                  </h6>
+                  <p class="card-text text-muted">
+                    I developed and currently maintain the official website for
+                    WhizFin, a 501(c)3 nonprofit that aims to educate people on
+                    financial literacy.
+                    <br /><br />
+                  </p>
+                </div>
+                <span class="mt-1 mb-3">
+                  <a
+                    class="btn btn-light mx-2 my-2 px-5 py-1"
+                    href="https://whizfin.org"
+                    target="_blank"
+                    >view</a
+                  >
+                  <a
+                    class="btn btn-dark mx-2 my-2 px-5 py-1"
+                    href="https://github.com/xgraceyan/whizfin-ui"
                     target="_blank"
                     >github</a
                   >
@@ -314,8 +425,10 @@
     ></script>
 
     <script src="butter.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       butter.init({ cancelOnTouch: true, wrapperDamper: 0.1 });
+      AOS.init();
     </script>
   </body>
 </html>
