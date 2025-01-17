@@ -119,6 +119,10 @@
               >
               <a
                 class="btn btn-dark mx-4 my-2 px-5 py-2"
+                data-bs-container="body"
+                data-bs-toggle="popover"
+                data-bs-placement="top"
+                data-bs-content="xgraceyan@gmail.com"
                 href="mailto:xgraceyan@gmail.com"
                 >Contact</a
               >
@@ -441,6 +445,14 @@
     <script>
       butter.init({ cancelOnTouch: true, wrapperDamper: 0.1 });
       AOS.init();
+    </script>
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
     </script>
   </body>
 </html>
